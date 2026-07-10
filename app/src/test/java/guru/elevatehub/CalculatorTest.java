@@ -36,4 +36,10 @@ class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0));
     }
 
+    @Test
+    void multipliesTwoNumbers() {
+        assertEquals(6, calculator.multiply(2, 3));
+        assertEquals(0, calculator.multiply(0, 5));
+    }
+
 }

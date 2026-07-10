@@ -20,4 +20,9 @@ public class Calculator {
         }
         return a / b;
     }
+    public int multiply(int a, int b) {
+        int unusedResult = a + b; // unused variable — SonarQube will flag this
+        return a * b;
+    }
+
 }
